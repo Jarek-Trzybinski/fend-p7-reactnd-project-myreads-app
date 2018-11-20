@@ -2,7 +2,7 @@ import React from 'react'
 import * as BooksAPI from './BooksAPI'
 import './App.css'
 import BookListPage from './BookListPage';
-import SearchBookPage from './SearchBookPage'
+//import SearchBookPage from './SearchBookPage'
 
 
 class BooksApp extends React.Component {
@@ -25,9 +25,9 @@ class BooksApp extends React.Component {
     return (
       <div className="app">
         
-          <SearchBookPage />
+          {/*<SearchBookPage /> */}
        
-          <BookListPage />
+          <BookListPage books={this.state.books}/>
         </div>
     )
   }
