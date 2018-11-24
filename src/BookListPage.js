@@ -4,6 +4,7 @@ import Book from './Book';
 class BookListPage extends Component {
     render() {
         const { books } = this.props;
+        const {ChangeShelf} = this.props;
 
         return (
             <div className="list-books">
@@ -24,6 +25,7 @@ class BookListPage extends Component {
                                 <li key={book.id}>
                                     <Book 
                                     book={book}
+                                    ChangeShelf={ChangeShelf}
                                     />
                                 </li>
                             )
@@ -43,6 +45,8 @@ class BookListPage extends Component {
                                 <li key={book.id}>
                                     <Book 
                                     book={book}
+                                    // passing method from from app.js to book.js
+                                    ChangeShelf={ChangeShelf}
                                     />
                                 </li>
                             )
@@ -62,6 +66,7 @@ class BookListPage extends Component {
                                     <li key={book.id}>
                                         <Book 
                                         book={book}
+                                        ChangeShelf={ChangeShelf}
                                         />
                                     </li>
                                 )
