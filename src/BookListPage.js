@@ -26,6 +26,7 @@ class BookListPage extends Component {
                                     <Book 
                                     book={book}
                                     ChangeShelf={ChangeShelf}
+                                    bookShelf={book.shelf}
                                     />
                                 </li>
                             )
@@ -47,6 +48,7 @@ class BookListPage extends Component {
                                     book={book}
                                     // passing method from from app.js to book.js
                                     ChangeShelf={ChangeShelf}
+                                    bookShelf={book.shelf}
                                     />
                                 </li>
                             )
@@ -67,6 +69,7 @@ class BookListPage extends Component {
                                         <Book 
                                         book={book}
                                         ChangeShelf={ChangeShelf}
+                                        bookShelf={book.shelf}
                                         />
                                     </li>
                                 )

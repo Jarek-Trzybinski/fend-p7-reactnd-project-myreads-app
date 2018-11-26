@@ -29,11 +29,11 @@ class SeachBookPage extends Component {
             if (query) {
             BooksAPI.search(query).then((searchedBooks) => {
                 // need to check if searchBooks are array because it need to be use by map method later
-                if (searchedBooks.constructor === Array) {
-                    this.setState({searchResult: searchedBooks})
+                    if (searchedBooks.constructor === Array) {
+                        this.setState({searchResult: searchedBooks})
                 } else
                 {
-                    // because match any books hasn't been found we need to set SearchResulat as empty array to avoid error with map function later
+                    // because match of any books hasn't been found we need to set SearchResulat as empty array to avoid error with map function later
                     this.setState({searchResult: []});
                 }
             })
@@ -54,6 +54,8 @@ class SeachBookPage extends Component {
 
     render() {
        const {searchResult} = this.state
+       const {ChangeShelf} = this.props;
+       const {MainPageBooks} = this.props;
 
        if (searchResult.constructor === Array) {
            console.log(`[Search Result is array]`);
@@ -84,18 +86,36 @@ class SeachBookPage extends Component {
                 <div className="search-books-results">
                     <ol className="books-grid">
                     {
-                        // map search result 
-                         
+                            // map search result 
+                            
                         
-                            searchResult.map(book => (
-                                <li key={book.id}>
-                                  <Book
-                                      book={book}
-                                       
-                                  />
-      
-                                  </li>
-                             ) 
+                            searchResult.map(foundBook => {
+                                
+                                // searchbook array don't have shelf value so we setting beging value as 'none'
+                                let bookShelf = "none";
+
+                                // check is search book with the same id is on mainPage if yes mainpage shelf will be assign to shelf value
+                                MainPageBooks
+                                .filter(MainPageBook => (MainPageBook.id === foundBook.id))
+                                .map(MainPageBook => (bookShelf = MainPageBook.shelf))
+                               
+                                return (
+                                    
+
+                                    <li key={foundBook.id}>
+                                    <Book
+                                        book={foundBook}
+                                        ChangeShelf={ChangeShelf}
+                                        bookShelf={bookShelf}
+                                         
+                                    />
+        
+                                    </li>
+
+                                )
+                                
+                                
+                             } 
                               )
                                                
                        
