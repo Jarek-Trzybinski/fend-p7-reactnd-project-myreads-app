@@ -3,6 +3,7 @@ import escapeRegExp from 'escape-string-regexp'
 import sortBy from 'sort-by'
 import * as BooksAPI from './BooksAPI'
 import Book from './Book';
+import { Link } from 'react-router-dom'
 
 class SeachBookPage extends Component {
     state = {
@@ -49,7 +50,7 @@ class SeachBookPage extends Component {
     }
 
     // create listarray of searched books
-    
+    small
     
 
     render() {
@@ -67,7 +68,9 @@ class SeachBookPage extends Component {
         return (
             <div className="search-books">
                 <div className="search-books-bar">
-                    <button className="close-search" onClick={() => this.setState({ showSearchPage: false })}>Close</button>
+                <Link to="/" >
+                    <button className="close-search">Close</button>
+                </Link>
                     <div className="search-books-input-wrapper">
                     
                    
