@@ -4,10 +4,11 @@ html, body, .root {
 
 body {
   line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.85);
 }
 
 body, .app {
-  background: white;
+  background: black;
 }
 
 /* main page */
