@@ -83,7 +83,7 @@ class SeachBookPage extends Component {
                      // invoke updateQuery on each key press
                      onChange={(event)=> this.updateQuery(event.target.value)}
                      />
-                    {JSON.stringify(this.state.query)}
+                    
                     </div>
                 </div>
                 <div className="search-books-results">

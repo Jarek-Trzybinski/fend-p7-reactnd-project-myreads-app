@@ -5,7 +5,6 @@ import BookListPage from './BookListPage';
 import SearchBookPage from './SearchBookPage'
 import { Route } from 'react-router-dom'
 
-
 class BooksApp extends React.Component {
   state = {
     books: []
@@ -26,7 +25,7 @@ class BooksApp extends React.Component {
    //values inside book components
    let value = event.target.value;
 
-    // update(book, shelf)
+   // update(book, shelf)
    // * book: `<Object>` containing at minimum an `id` attribute
    // * shelf: `<String>` contains one of ["wantToRead", "currentlyReading", "read"]  
 
@@ -43,7 +42,6 @@ class BooksApp extends React.Component {
         <Route path="/search"  render={() => (
             <SearchBookPage 
             ChangeShelf={this.ChangeShelf}
-
             MainPageBooks={this.state.books}
            />
         )}
@@ -53,13 +51,10 @@ class BooksApp extends React.Component {
           <BookListPage 
           books={this.state.books}
           ChangeShelf={this.ChangeShelf}
-        />
+          />
           )} 
         />
-
-        
-          
-        </div>
+      </div>
     )
   }
 }
