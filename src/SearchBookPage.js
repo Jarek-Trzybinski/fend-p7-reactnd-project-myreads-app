@@ -9,15 +9,13 @@ class SeachBookPage extends Component {
     state = {
         query: '' ,
         searchResult: []
-    }
-    
+    }    
     // method update query state on every input event
     updateQuery = (query) => {
         // add typing query into state.query
         this.setState({ query: query})
         
         // create search list of search books as array and add it into state.searchResult
-        // 
         if (query !== null ||  query!=='undefined') {
         this.createSearchResultArray(query);
         }
@@ -42,16 +40,10 @@ class SeachBookPage extends Component {
                 console.log("[BookAPI.search() error]: " + err);
                 
             })
-            
             } else {
             this.setState({searchResult: []})
         }
-        
     }
-
-    // create listarray of searched books
-    small
-    
 
     render() {
        const {searchResult} = this.state
@@ -73,8 +65,6 @@ class SeachBookPage extends Component {
                 </Link>
                     <div className="search-books-input-wrapper">
                     
-                   
-                   
                     <input type="text"
                      placeholder="Search by title or author"
                      type="text"
@@ -90,8 +80,6 @@ class SeachBookPage extends Component {
                     <ol className="books-grid">
                     {
                             // map search result 
-                            
-                        
                             searchResult.map(foundBook => {
                                 
                                 // searchbook array don't have shelf value so we setting beging value as 'none'
@@ -103,8 +91,6 @@ class SeachBookPage extends Component {
                                 .map(MainPageBook => (bookShelf = MainPageBook.shelf))
                                
                                 return (
-                                    
-
                                     <li key={foundBook.id}>
                                     <Book
                                         book={foundBook}
@@ -112,26 +98,17 @@ class SeachBookPage extends Component {
                                         bookShelf={bookShelf}
                                          
                                     />
-        
                                     </li>
-
-                                )
-                                
-                                
+                                )                              
                              } 
                               )
-                                               
-                       
-                       
-                       
-                    
+
                     }
                    
                     </ol>
                 </div>
           </div>
         )
-
     }
 }
 
