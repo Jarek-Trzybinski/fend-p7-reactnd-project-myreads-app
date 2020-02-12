@@ -1,7 +1,7 @@
 {
   "main.css": "/fend-p7-reactnd-project-myreads-app/static/css/main.dd36d5ed.chunk.css",
-  "main.js": "/fend-p7-reactnd-project-myreads-app/static/js/main.1782d41e.chunk.js",
-  "main.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/main.1782d41e.chunk.js.map",
+  "main.js": "/fend-p7-reactnd-project-myreads-app/static/js/main.2474329c.chunk.js",
+  "main.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/main.2474329c.chunk.js.map",
   "static/js/1.19225259.chunk.js": "/fend-p7-reactnd-project-myreads-app/static/js/1.19225259.chunk.js",
   "static/js/1.19225259.chunk.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/1.19225259.chunk.js.map",
   "runtime~main.js": "/fend-p7-reactnd-project-myreads-app/static/js/runtime~main.871913dc.js",
@@ -9,6 +9,6 @@
   "static/media/App.css": "/fend-p7-reactnd-project-myreads-app/static/media/arrow-drop-down.9d4e3f36.svg",
   "static/css/main.dd36d5ed.chunk.css.map": "/fend-p7-reactnd-project-myreads-app/static/css/main.dd36d5ed.chunk.css.map",
   "index.html": "/fend-p7-reactnd-project-myreads-app/index.html",
-  "precache-manifest.14a58d64a53cf9b73b3a916c0c8df8db.js": "/fend-p7-reactnd-project-myreads-app/precache-manifest.14a58d64a53cf9b73b3a916c0c8df8db.js",
+  "precache-manifest.8d87fe9b16f012d4dd97455dc23db3b3.js": "/fend-p7-reactnd-project-myreads-app/precache-manifest.8d87fe9b16f012d4dd97455dc23db3b3.js",
   "service-worker.js": "/fend-p7-reactnd-project-myreads-app/service-worker.js"
 }
