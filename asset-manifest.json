@@ -1,14 +1,14 @@
 {
   "main.css": "/fend-p7-reactnd-project-myreads-app/static/css/main.dd36d5ed.chunk.css",
-  "main.js": "/fend-p7-reactnd-project-myreads-app/static/js/main.6e2fb87a.chunk.js",
-  "main.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/main.6e2fb87a.chunk.js.map",
+  "main.js": "/fend-p7-reactnd-project-myreads-app/static/js/main.bb45740b.chunk.js",
+  "main.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/main.bb45740b.chunk.js.map",
   "static/js/1.19225259.chunk.js": "/fend-p7-reactnd-project-myreads-app/static/js/1.19225259.chunk.js",
   "static/js/1.19225259.chunk.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/1.19225259.chunk.js.map",
   "runtime~main.js": "/fend-p7-reactnd-project-myreads-app/static/js/runtime~main.871913dc.js",
   "runtime~main.js.map": "/fend-p7-reactnd-project-myreads-app/static/js/runtime~main.871913dc.js.map",
-  "static/media/App.css": "/fend-p7-reactnd-project-myreads-app/static/media/arrow-back.20e8847d.svg",
+  "static/media/App.css": "/fend-p7-reactnd-project-myreads-app/static/media/arrow-drop-down.9d4e3f36.svg",
   "static/css/main.dd36d5ed.chunk.css.map": "/fend-p7-reactnd-project-myreads-app/static/css/main.dd36d5ed.chunk.css.map",
   "index.html": "/fend-p7-reactnd-project-myreads-app/index.html",
-  "precache-manifest.e93c2dc62f07ffc4eaad61a191b89e22.js": "/fend-p7-reactnd-project-myreads-app/precache-manifest.e93c2dc62f07ffc4eaad61a191b89e22.js",
+  "precache-manifest.7f359e69e748b58ebb57ff0c1a5e70d8.js": "/fend-p7-reactnd-project-myreads-app/precache-manifest.7f359e69e748b58ebb57ff0c1a5e70d8.js",
   "service-worker.js": "/fend-p7-reactnd-project-myreads-app/service-worker.js"
 }
