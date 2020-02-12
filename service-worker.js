@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/github.io/fend-p7-reactnd-project-myreads-app/precache-manifest.142403df574c7cd70bd3ed1a36af47ad.js"
+  "/fend-p7-reactnd-project-myreads-app/precache-manifest.8616b1272d123255f03996de10d78a31.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/github.io/fend-p7-reactnd-project-myreads-app/index.html", {
+workbox.routing.registerNavigationRoute("/fend-p7-reactnd-project-myreads-app/index.html", {
   
-  blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
+  blacklist: [/^\/_/,/\/[^/]+\.[^/]+$/],
 });
